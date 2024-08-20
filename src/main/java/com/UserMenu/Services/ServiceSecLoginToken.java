@@ -22,8 +22,8 @@ public class ServiceSecLoginToken {
 		return repoSecLoginToken.runGenToken(p_user_id);		
 	}
 	
-	public String execGetUserByToken(String p_token, Integer pout_user_id) {
-		return repoSecLoginToken.runGetUserByToken(p_token, pout_user_id);		
+	public String execGetUserByToken(String p_token) {
+		return repoSecLoginToken.runGetUserByToken(p_token);		
 	}
 
 }

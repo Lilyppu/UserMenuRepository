@@ -18,8 +18,8 @@ import lombok.NoArgsConstructor;
 public class SecLoginToken {
 	
 	@Id
-	@Column(name="USER_ID")
-	private Integer sltUserId;
+	@Column(name="USER_ID", length=20)
+	private String sltUserId;
 	
 	@Column(name="TOKEN", length=50)
 	private String sltToken;

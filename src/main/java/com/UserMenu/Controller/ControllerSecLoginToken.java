@@ -28,8 +28,8 @@ public class ControllerSecLoginToken {
 	}
 	
 	@GetMapping("/UserMenu/execgetuserbytoken")
-	public String execGetUserByToken(String p_token, Integer pout_user_id) {
-		return servSecLoginToken.execGetUserByToken(p_token, pout_user_id) ;
+	public String execGetUserByToken(String p_token) {
+		return servSecLoginToken.execGetUserByToken(p_token) ;
 	}
 
 }
