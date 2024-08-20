@@ -20,7 +20,7 @@ public interface SecLoginTokenRepository extends JpaRepository<SecLoginToken, In
 	public String runDelToken(String p_user_id);	
 	
 	@Procedure(procedureName = "P_SEC_GEN_TOKEN")
-	public String runGenToken(String p_user_id, String pout_token);	
+	public String runGenToken(String p_user_id);	
 	
 	@Procedure(procedureName = "P_SEC_GET_USER_BY_TOKEN")
 	public String runGetUserByToken(String p_token, Integer pout_user_id);	

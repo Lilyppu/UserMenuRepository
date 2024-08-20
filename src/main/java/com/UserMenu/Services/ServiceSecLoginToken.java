@@ -18,8 +18,8 @@ public class ServiceSecLoginToken {
 		return repoSecLoginToken.runDelToken(p_user_id);		
 	}
 	
-	public String execGenToken(String p_user_id, String pout_token) {
-		return repoSecLoginToken.runGenToken(p_user_id, pout_token);		
+	public String execGenToken(String p_user_id) {
+		return repoSecLoginToken.runGenToken(p_user_id);		
 	}
 	
 	public String execGetUserByToken(String p_token, Integer pout_user_id) {
