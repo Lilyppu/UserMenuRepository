@@ -23,8 +23,9 @@ public class ControllerSecLoginToken {
 	}
 	
 	@GetMapping("/UserMenu/execgentoken")
-	public String execGenToken(String p_user_id) {
-		return servSecLoginToken.execGenToken(p_user_id) ;
+	public String execGenToken(String p_userid) {
+		System.out.print("susereee....:"+p_userid);
+		return servSecLoginToken.execGenToken(p_userid) ;
 	}
 	
 	@GetMapping("/UserMenu/execgetuserbytoken")
